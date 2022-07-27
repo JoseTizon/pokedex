@@ -20,10 +20,10 @@ const UserInput = () => {
   return (
     <div>
       <header>
-        <img src="./assets/pokedex-title.png" alt="" />
+        <img src="../assets/pokedex-title.png" alt="" />
       </header>
       <form onSubmit={submit} className="submit-form">
-        <img src={`./assets/ash${random}.png`} alt="" />
+        <img src={`../assets/ash${random}.png`} alt="" />
         <p><b>Hi trainer!</b> Please write your name to get started!</p>
         <input
           type="text"
