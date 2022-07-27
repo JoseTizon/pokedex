@@ -224,13 +224,14 @@ select{
   border-radius: 5px;
   background-color: gainsboro;
   margin: 5px;
-  width: 70px;
+  width: 50px;
   font-size: large;
 }
 
 .page-item:hover{
   background-color: #3f3e3e;
   color: #ffffff;
+  cursor: pointer;
 }
 
 a:link, a:visited, a:active {
