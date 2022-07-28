@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { changeUser } from "../store/slices/user.slice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import pokedex from '../assets/pokedex-title.png'
+import pokedex from '../assets/pokedex.png'
 
 const UserInput = () => {
   const [userName, setUserName] = useState("");
