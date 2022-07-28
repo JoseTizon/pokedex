@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { changeUser } from "../store/slices/user.slice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import pokedex from '../assets/pokedex-title.png'
 
 const UserInput = () => {
   const [userName, setUserName] = useState("");
@@ -20,7 +21,7 @@ const UserInput = () => {
   return (
     <div>
       <header>
-        <img src="../assets/pokedex-title.png" alt="" />
+        <img src={pokedex} alt="" />
       </header>
       <form onSubmit={submit} className="submit-form">
         <img src={`../assets/ash${random}.png`} alt="" />
