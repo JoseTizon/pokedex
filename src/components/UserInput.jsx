@@ -3,6 +3,7 @@ import { changeUser } from "../store/slices/user.slice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import pokedex from '../assets/pokedex.png'
+import ash1 from '../assets/ash1.png'
 
 const UserInput = () => {
   const [userName, setUserName] = useState("");
@@ -16,15 +17,13 @@ const UserInput = () => {
     navigate("/pokedex");
   };
 
-  const random = Math.floor(Math.random() * 8) + 1;
-
   return (
     <div>
       <header>
-        <img src={pokedex} alt="" />
+        <img src={pokedex} alt="pokedex title" />
       </header>
       <form onSubmit={submit} className="submit-form">
-        <img src={`../assets/ash${random}.png`} alt="" />
+        <img src={ash1} alt="ash picture" />
         <p><b>Hi trainer!</b> Please write your name to get started!</p>
         <input
           type="text"

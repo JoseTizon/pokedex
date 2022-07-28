@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import getType from "../utils/getType";
+import pokedex from '../assets/pokedex.png'
 
 const Pokemon = () => {
   const [pokemon, setPokemon] = useState({});
@@ -22,7 +23,7 @@ const Pokemon = () => {
   return (
     <div style={{ backgroundColor: getType(pokemon.types?.[0].type.name) }}>
       <header>
-        <img src="../assets/pokedex-title.png" alt="" />
+      <img src={pokedex} alt="pokedex title" />
       </header>
       <button onClick={() => navigate("/pokedex")} className="btn-return">
         <i className="fa-solid fa-arrow-rotate-left"></i>

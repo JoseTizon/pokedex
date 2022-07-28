@@ -4,6 +4,7 @@ import axios from "axios";
 import PokemonItem from "./PokemonItem";
 import { useNavigate } from "react-router-dom";
 import Pagination from "./Pagination";
+import pokedex from '../assets/pokedex.png'
 
 const Pokedex = () => {
   const user = useSelector((state) => state.user);
@@ -40,7 +41,7 @@ const Pokedex = () => {
   return (
     <div>
       <header>
-        <img src="../assets/pokedex-title.png" alt="" />
+      <img src={pokedex} alt="pokedex title" />
       </header>
       <p className="trainer-title">Welcome <b>{user}</b>!</p>
       <form onSubmit={search} className="search">
